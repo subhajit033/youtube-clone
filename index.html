@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="sticky top-0 z-10 bg-white">
+        <nav>
+            <!-- parent of nav bar -->
+            <div class="flex justify-between items-center px-3 cu md:px-6 py-3 cu">
+                <!-- 1st child -->
+                <div class="md:flex md:items-center md:space-x-6 md:order-1">
+                    <div class="humberger md:flex md:flex-col md:space-y-1 hidden">
+                        <div class="bg-black w-5 h-0.5"></div>
+                        <div class="bg-black w-5 h-0.5"></div>
+                        <div class="bg-black w-5 h-0.5"></div>
+                    </div>
+                    <div class="flex items-center space-x-1">
+
+                        <img class="w-7" src="youtube-img/youtube.png" alt="">
+                        <p class="text-xl md:text-2xl font-semibold -tracking-wider">YouTube</p>
+                    </div>
+                </div>
+
+                <!-- 2nd child -->
+                <div class="flex items-center space-x-4 md:space-x-7 md:order-3 cu">
+                    <img class="w-7 hidden md:block cursor-pointer" src="youtube-img/video-camera.png" alt="">
+                    <img class="w-5 md:hidden cursor-pointer" src="youtube-img/feed.png" alt="">
+                    <img class="w-6 cursor-pointer" src="youtube-img/bell.png" alt="">
+                    <img class="w-5 cursor-pointer md:hidden" src="youtube-img/search.png" alt="">
+                    <img class="w-8 cursor-pointer rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                </div>
+                <!-- 3rd child in md:break point -->
+                <div class="hidden  md:order-2 md:flex md:items-center md:space-x-4">
+                    <div class="flex">
+                        <input class="border border-1 border-black w-[40vw] px-3 cu py-1 rounded-l-full" type="search"
+                            placeholder="Search" name="" id="">
+                        <div
+                            class="border border-black w-6 flex justify-center items-center box-content px-3 cu rounded-r-full bg-gray-200">
+                            <img class="w-5" src="youtube-img/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="border border-black px-1 py-1 rounded-full bg-gray-200">
+                        <img class="w-6" src="youtube-img/microphone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- for desktop -->
+        <!-- float left -->
+        <div class="w-1/6 h-[100vh] float-left px-2 hidden md:block overflow-auto">
+            <!-- 1st mainchild -->
+            <div class="space-y-3 cu">
+                <div class="flex items-center space-x-4 bg-gray-300 w-40 pl-3 cursor-pointer py-1 rounded-lg">
+                    <img class="w-5" src="youtube-img/home.png" alt="">
+                    <p class="font-semibold">Home</p>
+                </div>
+                <!-- child -->
+                <div class="flex items-center space-x-4 pl-3 cursor-pointer">
+                    <img class="w-5" src="youtube-img/shorts.png" alt="">
+                    <p class="font-semibold">Shorts</p>
+                </div>
+                <div class="flex items-center space-x-4 pl-3 cursor-pointer">
+                    <img class="w-6" src="youtube-img/subcriptions.png" alt="">
+                    <p class="font-semibold">Subscriptions</p>
+                </div>
+            </div>
+            <div class="h-[1px] bg-gray-400 my-5"></div>
+            <!-- 2nd main child -->
+            <!-- child -->
+            <div class="space-y-3 cu">
+                <div class="flex items-center space-x-4 pl-3 cursor-pointer">
+                    <img class="w-6" src="youtube-img/library1.png" alt="">
+                    <p class="font-semibold">Library</p>
+                </div>
+                <!-- child -->
+                <div class="flex items-center space-x-4 pl-3 cursor-pointer">
+                    <img class="w-5" src="youtube-img/history.png" alt="">
+                    <p class="font-semibold">History</p>
+                </div>
+                <!-- child -->
+                <div class="flex items-center space-x-4 pl-3 cursor-pointer">
+                    <img class="w-6" src="youtube-img/your-vdo.png" alt="">
+                    <p class="font-semibold">Your videos</p>
+                </div>
+                <!-- child -->
+                <div class="flex items-center space-x-4 pl-3 cursor-pointer">
+                    <img class="w-5" src="youtube-img/history.png" alt="">
+                    <p class="font-semibold">Watch Later</p>
+                </div>
+                <!-- child -->
+                <div class="flex items-center space-x-4 pl-3 cu">
+                    <img class="w-5" src="youtube-img/like.png" alt="">
+                    <p class="font-semibold">Liked videos</p>
+                </div>
+            </div>
+            <div class="h-[1px] bg-gray-400 my-5"></div>
+            <!-- subcriptions -->
+            <!-- parent of subcription -->
+            <div class="space-y-3 space-x-3">
+                <p class="font-semibold">Subcriptions</p>
+                <!-- child_1 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">CodeWithHarry</p>
+                    </div>
+                    <img class="w-8" src="youtube-img/live.png" alt="">
+                </div>
+                <!-- child_2 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Clever Programmer</p>
+                    </div>
+                    <img class="w-8" src="youtube-img/live.png" alt="">
+                </div>
+                <!-- child_3 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">T-Series</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_4 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">FireShip</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_5 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Apna College</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                 <!-- child_6 -->
+                 <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Physics Wallah</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">online Tutorials</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Wscube Tech</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Tech wiser</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Sandeep Maheswari</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">BB ki Vines</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Triggered Insaan</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">Zee Music</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">KelVin Powell</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                <!-- child_7 -->
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-3 items-center">
+                        <img class="w-8 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        <p class="text-sm font-semibold">freecodecamp 🔥</p>
+                    </div>
+                    <img class="w-2" src="youtube-img/record.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- float right in md break point -->
+        <div class="b md:w-5/6 md:float-right">
+            <!-- for mobile view -->
+            <!-- header part of main contain -->
+            <div class="flex space-x-4 px-3 my-2">
+                <div class=" flex justify-center items-center px-2 bg-gray-200 md:hidden">
+                    <img class="w-6" src="youtube-img/compass.png" alt="">
+                </div>
+                <div class="w-0.5 h-7 bg-black md:hidden"></div>
+                <!-- parent of all written element -->
+                <div class="flex items-center space-x-4">
+                    <p
+                        class="px-3 cu py-1 bg-gray-600 text-white inline-block cursor-pointer rounded-full md:rounded-lg">
+                        All</p>
+                    <p class="px-3 cu py-1 bg-gray-300 inline-block cursor-pointer rounded-full md:rounded-lg">Music</p>
+                    <p class="px-3 cu py-1 bg-gray-300 inline-block cursor-pointer rounded-full md:rounded-lg">Game
+                        shows</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Fingerstyle</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Computer
+                        science</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Live</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Neet</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">T-series</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Bollywood Music
+                    </p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Reverbation</p>
+                    <p class="px-3 cu py-1 bg-gray-300 hidden rounded-lg md:inline-block cursor-pointer">Web dev</p>
+
+                </div>
+            </div>
+            <!-- main youtube video -->
+            <!-- row_1 -->
+            <div class="my-6 md:flex md:justify-evenly md:items-start md:flex-wrap md:content-center">
+                <!-- first you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/gulabi.jpg" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[18rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">Gulabi | full song | Sushant Singh rajput # tseries</h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">T-SERIES.</p>
+                                <p class="text-xs">5.5 lakh view.</p>
+                                <p class="text-xs">1 month ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <!-- second you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/logic.webp" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[19rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">Learn How to build to logic || logic builder</h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">Subhajit Kundu.</p>
+                                <p class="text-xs">321k view.</p>
+                                <p class="text-xs">7 month ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <!-- third you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/css.webp" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[19rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">Common css mistakes || kelvein Powel | Css</h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">kelvin Powel.</p>
+                                <p class="text-xs">134k.</p>
+                                <p class="text-xs">8 days ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <!-- fourth you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/mon amar.webp" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[19rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">MON AMAR KEMON KEMON KORE || Singdhajit bhowmik</h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">Zee Music.</p>
+                                <p class="text-xs">11 lakh view.</p>
+                                <p class="text-xs">2 week ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row_2 -->
+            <div class="md:my-6 md:flex md:justify-evenly md:items-start md:flex-wrap md:content-center">
+                <!-- first you tube video -->
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/dhruv.webp" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[18rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">
+                                Joshimath Crisis of India || Dhruv Rathee
+                            </h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">Dhruv Rathee.</p>
+                                <p class="text-xs">16 lakh view.</p>
+                                <p class="text-xs">2 month ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <!-- second you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/ram-siya-ram.webp"
+                            alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[19rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">Ram Siya Ram || Jay ram Ram | Subhajit</h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">Subhajit Kundu.</p>
+                                <p class="text-xs">321k view.</p>
+                                <p class="text-xs">7 month ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <!-- third you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/sandeep.webp" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[19rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">Best advise for 20's | Sanddep Maheswari <span
+                                    class="text-blue-800">#motivation</span></h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">Sandeep Maheswari.</p>
+                                <p class="text-xs">1.2 cr.</p>
+                                <p class="text-xs">3 years ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="h-0.5 bg-gray-400 my-4 md:hidden"></div>
+                <!-- fourth you tube video -->
+                <div>
+                    <div class="mb-2">
+                        <!-- video part -->
+                        <img class="w-full h-48 md:w-72 md:h-auto md:rounded-xl" src="youtube-img/anupam.webp" alt="">
+                    </div>
+                    <!-- description part -->
+                    <div class="flex items-center space-x-4 px-2 md:px-0 md:w-[19rem]">
+                        <!-- 1st child  of youtube video -->
+                        <div>
+                            <img class="w-10 rounded-full" src="youtube-img/subhajit.jpeg" alt="">
+                        </div>
+                        <!-- 2nd child  -->
+                        <div>
+                            <h2 class="font-semibold text-sm">Anupam Mittal Shows His High IQ! |Kaun Banega Crorepati
+                                Season14 </h2>
+                            <div class="flex items-center space-x-1">
+                                <p class="text-xs">Sony Live.</p>
+                                <p class="text-xs">12 lakh view.</p>
+                                <p class="text-xs">11 days ago</p>
+                            </div>
+                        </div>
+                        <!-- third child -->
+                        <div class="md:hidden">
+                            <img class="w-5" src="youtube-img/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of float right -->
+        </div>
+    </main>
+
+</body>
+
+</html>
